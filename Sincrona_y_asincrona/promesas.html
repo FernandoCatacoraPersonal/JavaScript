@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promesas</title>
+</head>
+
+<body>
+    <p>Son objetos que representan un valor, que pueden tardar un tiempo en ejecutarse, tiene 3 estados</p>
+    <ul>
+        <li>Pendiente</li>
+        <li>Cumplida</li>
+        <li>Fallida</li>
+    </ul>
+    <script>
+        let miPromesa = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                let error = true;
+                if (error) {
+                    reject("la promesa fallo");
+                }
+                else {
+                    resolve("Se cumplio la promesa");
+                }
+            });
+        });
+        miPromesa.then(function (resultado) {
+            console.log(resultado);
+        }).catch(function (error) {
+            console.log(error);
+        });
+    </script>
+</body>
+
+</html>
