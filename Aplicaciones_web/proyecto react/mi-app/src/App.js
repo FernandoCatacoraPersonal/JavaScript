@@ -12,6 +12,7 @@ function App(props) {
       <div style={{backgroundColor:props.colorFondo}}>
           <h1 style={{color: props.colorTexto}}>Contador: {contador} </h1>
           <button onClick={aumentarConteo} >Ingrementar</button>
+          <input></input>
       </div>
   )
 }
