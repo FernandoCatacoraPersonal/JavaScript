@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos de telefonia</title>
+</head>
+
+<body onload="cargar()">
+    <h1>Productos</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Id </th>
+                <th>Marca</th>
+                <th>modelo</th>
+                <th>color</th>
+                <th>almacenamineto</th>
+                <th>procesador</th>
+            </tr>
+        </thead>
+        <tbody id="contenido">
+            <!--Necesito 10 de esos-->
+            
+        </tbody>
+    </table>
+
+    <input type="text" id="objConsultar">
+    <button id="buscarObjeto">Buscar</button>
+    <button id="limpieza" >Limpiar</button>
+    <div id="resultados"></div>
+
+    <button id="eliminar">eliminar</button>
+    <button id="modificar" >modificar</button>
+
+    <h3>Agregar</h3>
+    <label for="">ID</label>
+    <input type="text" id="dire">
+    <label for="">Marca</label>
+    <input type="text" id="marca">
+    <label for="">Modelo</label>
+    <input type="text" id="modelo">
+    <label for="">Color</label>
+    <input type="text" id="color">
+    <label for="">Almacenamiento</label>
+    <input type="text" id="almacenamineto">
+    <label for="">Procesador</label>
+    <input type="text" id="procesador">
+    <button id="agregar" >Agregar</button>
+
+    <script src="funciones.js"></script>
+</body>
+
+</html>
